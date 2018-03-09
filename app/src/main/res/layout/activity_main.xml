@@ -37,7 +37,8 @@
             android:layout_margin="10dp"
             android:layout_marginLeft="17dp"
             android:onClick="dropIn"
-            android:tag="1"/>
+            android:tag="1" />
+
         <ImageView
             android:id="@+id/red3"
             android:layout_width="100dp"
@@ -45,7 +46,8 @@
             android:layout_margin="10dp"
             android:layout_marginLeft="12dp"
             android:onClick="dropIn"
-            android:tag="2"/>
+            android:tag="2" />
+
         <ImageView
             android:id="@+id/red4"
             android:layout_width="100dp"
@@ -53,7 +55,7 @@
             android:layout_margin="10dp"
             android:layout_marginTop="13dp"
             android:onClick="dropIn"
-            android:tag="3"/>
+            android:tag="3" />
 
         <ImageView
             android:id="@+id/red5"
@@ -63,7 +65,8 @@
             android:layout_marginLeft="17dp"
             android:layout_marginTop="13dp"
             android:onClick="dropIn"
-            android:tag="4"/>
+            android:tag="4" />
+
         <ImageView
             android:id="@+id/red6"
             android:layout_width="100dp"
@@ -72,7 +75,8 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="13dp"
             android:onClick="dropIn"
-            android:tag="5"/>
+            android:tag="5" />
+
         <ImageView
             android:id="@+id/red7"
             android:layout_width="100dp"
@@ -80,7 +84,7 @@
             android:layout_margin="10dp"
             android:layout_marginTop="17dp"
             android:onClick="dropIn"
-            android:tag="6"/>
+            android:tag="6" />
 
         <ImageView
             android:id="@+id/red8"
@@ -90,7 +94,8 @@
             android:layout_marginLeft="17dp"
             android:layout_marginTop="17dp"
             android:onClick="dropIn"
-            android:tag="7"/>
+            android:tag="7" />
+
         <ImageView
             android:id="@+id/red9"
             android:layout_width="100dp"
@@ -99,9 +104,38 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="17dp"
             android:onClick="dropIn"
-            android:tag="8"/>
-
+            android:tag="8" />
 
 
     </GridLayout>
+
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:onClick="playAgain"
+        android:text="Play Again?"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/winnerText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
